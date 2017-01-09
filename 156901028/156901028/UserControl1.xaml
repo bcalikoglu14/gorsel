@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="_156901028.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:_156901028"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0"  HorizontalAlignment="Center" BorderBrush="#FFEE2828" FontSize="25" FontWeight="Bold" FontFamily="Tahoma, Geneva, sans-serif" Margin="0,15,0,0"  Width="300" Content=" Kullanıcı Giriş Kontrol"/>
+        <Label Grid.Row="1"  HorizontalAlignment="Center" BorderBrush="#FFEE2828" FontSize="12" FontWeight="Bold" FontFamily="Tahoma, Geneva, sans-serif"   Width="85" Height="25" Content="Kullanıcı Adı"/>
+        <Label Grid.Row="3"  HorizontalAlignment="Center" BorderBrush="#FFEE2828" FontSize="12" FontWeight="Bold" FontFamily="Tahoma, Geneva, sans-serif"   Width="50" Height="25" Content="Şifre"/>
+        <TextBox  x:Name="text1" Height="25"  Grid.Row="2" Width="250"></TextBox>
+        <PasswordBox x:Name="sifre1" Grid.Row="4" Height="25" Width="250" ></PasswordBox>
+        <Button Name="buton1" Grid.Row="5" Height="25" Width="100" Click="Button_Click" Margin="101,40,99,55" >Giriş</Button>
+    </Grid>
+</UserControl>
