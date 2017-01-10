@@ -20,22 +20,29 @@ namespace _156901028
     /// </summary>
     public partial class Window1 : Window
     {
+        public class bilgi
+        {
+            public string ilacAdi { get; set; }
+            public string etkenMadde { get; set; }
+            public string form { get; set; }
+            public string tarih { get; set; }
+        }
         public Window1()
         {
             InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void yeniKayit(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void guncelle(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void kayitSil(object sender, RoutedEventArgs e)
         {
 
         }
@@ -45,9 +52,9 @@ namespace _156901028
 
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void cikis(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }
