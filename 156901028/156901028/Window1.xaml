@@ -5,8 +5,78 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_156901028"
         mc:Ignorable="d"
-        Title="Window1" Height="300" Width="300">
-    <Grid>
-        
+         Title="Tarımsal İlaçlar" Height="600" Width="1000" Name="ekran" ResizeMode="NoResize" >
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="641*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="250"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"></RowDefinition>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" BorderBrush="#FFEE2828" FontSize="24" FontWeight="Bold" FontFamily="ARİAL" Margin="0,0,-852,-5" Width="994" Content="                                                      TARIMSAL İLAÇLAR" Grid.RowSpan="2"/>
+        </Grid>
+        <ListBox Name="lst1" Grid.Row="1" Background="WhiteSmoke" Grid.ColumnSpan="2">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="25"></ColumnDefinition>
+                            <ColumnDefinition Width="105"></ColumnDefinition>
+                            <ColumnDefinition Width="140"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Grid Grid.Row="2" Name="grd1" Grid.ColumnSpan="2">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36*"></RowDefinition>
+                <RowDefinition Height="36"></RowDefinition>
+                <RowDefinition Height="36*"></RowDefinition>
+                <RowDefinition Height="36*"></RowDefinition>
+                <RowDefinition Height="36*"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="244"></ColumnDefinition>
+                <ColumnDefinition Width="289"></ColumnDefinition>
+
+                <ColumnDefinition ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Margin="0,5,5,5" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Width="59">İLAÇ ADI:</Label>
+            <Label Margin="0,5,5,5" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Width="92">ETKEN MADDE:</Label>
+            <Label Margin="0,5,5,5" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" Width="45">FORM:</Label>
+            <Label Margin="0,5,5,5" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right" Width="141">SON KULLANMA TARİHİ:</Label>
+            <TextBox Margin="5" Name="ilacAdi" Grid.Row="1" Grid.Column="1" ></TextBox>
+            <TextBox Margin="5" Name="etkenMadde" Grid.Row="2" Grid.Column="1" ></TextBox>
+            <TextBox Margin="5" Name="form" Grid.Row="3" Grid.Column="1"/>
+            <DatePicker Margin="5" Name="tarih" Grid.Row="4" Grid.Column="1" ></DatePicker>
+
+            <Button Width="90" Grid.Row="1" Grid.Column="2"  Grid.RowSpan="2" Click="Button_Click_1" HorizontalAlignment="Center" Margin="78,6,76,6">YENİ KAYIT</Button>
+            <Button Width="90" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" Click="Button_Click_2" HorizontalAlignment="Center" Margin="106,6,93,6">KAYIT SİL</Button>
+            <Button Width="90" Grid.Row="3" Grid.Column="2" Grid.RowSpan="2"  Click="Button_Click" HorizontalAlignment="Center" Margin="78,6,76,6">GÜNCELLE</Button>
+            <Button Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" Click="temizle" Margin="106,6,93,6">TEMİZLE</Button>
+            <Button Width="90" Height="60" Grid.Row="5" Grid.Column="4" Click="Button_Click_3" HorizontalAlignment="Right" Margin="0,0,5,5"  VerticalAlignment="Bottom">ÇIKIŞ</Button>
+        </Grid>
+
     </Grid>
 </Window>
