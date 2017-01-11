@@ -21,7 +21,7 @@ namespace _156901028
     public partial class UserControl1 : UserControl
     {
         int sayac;
-        public UserControl1()
+        public UserControl1() 
         {
             InitializeComponent();
         }

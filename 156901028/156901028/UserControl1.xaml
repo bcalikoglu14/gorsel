@@ -21,6 +21,6 @@
         <Label Grid.Row="3"  HorizontalAlignment="Center" BorderBrush="#FFEE2828" FontSize="12" FontWeight="Bold" FontFamily="Tahoma, Geneva, sans-serif"   Width="50" Height="25" Content="Şifre"/>
         <TextBox  x:Name="text1" Height="25"  Grid.Row="2" Width="250"></TextBox>
         <PasswordBox x:Name="sifre1" Grid.Row="4" Height="25" Width="250" ></PasswordBox>
-        <Button Name="buton1" Grid.Row="5" Height="25" Width="100" Click="Button_Click" Margin="101,40,99,55" >Giriş</Button>
+        <Button Name="buton1" Grid.Row="5" Height="25" Width="100" Click="Button_Click" Margin="101,40,99,55">Giriş</Button>
     </Grid>
 </UserControl>
